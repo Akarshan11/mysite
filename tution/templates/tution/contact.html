@@ -1,0 +1,37 @@
+{% extends 'tution/upper.html' %}
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-sm-3">
+            <br>
+        <img src="https://www.giteslimousin.com/wordpress/wp-content/uploads/write-icon.png">
+    </div>
+    <div class="col-sm-6">
+        <br>
+        <br>
+            <div class="panel panel-primary">
+                <div class="panel-body" style="margin: 20px 20px 20px 20px;">
+                   <div class="row justify-content-center">
+<img src="https://t4.ftcdn.net/jpg/00/57/64/67/240_F_57646767_9opsaKTt1aFEhEnfP4RmxrpQzKa82de2.jpg">
+                   </div>
+
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {% include 'tution/form.html' %}
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+                </div>
+</div>
+</div>
+    <div class="col-sm-3">
+
+        <br>
+        <br>
+        <br><br><br>
+        </div>
+
+    </div>
+</div>
+{% endblock %}>

@@ -1,0 +1,181 @@
+<style>
+
+.logo{
+height:25px;
+padding-right:5px;
+padding-left:5px;
+}
+
+.navbar-inverse{
+    height: 50px;
+
+    padding-top:-5px;
+
+}
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+      position:relative!important;
+  }
+
+h1  {
+
+    font-family: 'Architects Daughter', cursive;
+    color: #a09f82 !important;
+}
+
+.jumbotron {
+      ;
+      color: #;
+      padding: 230px 45px !important;
+      font-family: Montserrat, sans-serif !important;
+      background-image: url(https://static8.depositphotos.com/1389325/864/v/950/depositphotos_8649564-stock-illustration-science-school-board.jpg)
+
+  }
+
+h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+
+.item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+.navbar-brand
+{
+    position: relative;
+    height: 50px;
+    width: 170px;
+    left: 15px;
+}
+
+.navbar li a, .navbar  {
+      color: #fff !important;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+.slideanim {visibility:hidden;}
+.slide {
+      animation-name: slide !important;
+      -webkit-animation-name: slide !important;
+      animation-duration: 2s !important;
+      -webkit-animation-duration: s !important;
+      visibility: visible !important;
+  }
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+  }
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+.btn-lg {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+container-fluid {
+      padding: 80px 50px;
+  }
+.bg-grey {
+      background-color: #f6f6f6;
+  }
+.logo-small {
+      color: #232625 !important;
+      font-size: 50px;
+  }
+.logo {
+      color: #232625!important;
+      font-size: 200px;
+      }
+
+.panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+.panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+.panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+.panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+.panel-footer {
+      background-color: white !important;
+  }
+.panel-footer h3 {
+      font-size: 32px;
+  }
+.panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+.panel-footer .btn {
+      margin: 20px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+
+  </style>

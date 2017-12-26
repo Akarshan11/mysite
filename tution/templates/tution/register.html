@@ -1,0 +1,41 @@
+{% extends 'tution/lbase.html' %}
+
+{% load widget_tweaks %}
+{% load staticfiles %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'tution/pika.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <h1 class="text-center logo">
+
+    </h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-sm-12">
+        <div class="card">
+
+          <div class="card-body">
+              <div class="row justify-content-center">
+               <img src="{%static 'tution/images/vid.png' %}">
+
+
+              </div>
+
+               <h2 class="card-title">SIGN UP</h2>
+              <br>
+            <form method="post" novalidate>
+              {% csrf_token %}
+              {% include 'tution/login_temp.html' %}
+              <button type="submit" class="btn btn-primary btn-block">Create an account</button>
+            </form>
+          </div>
+          <div class="card-footer text-muted text-center">
+            Already have an account? <a href="{% url 'login' %}">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

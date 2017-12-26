@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Vidya peth{% endblock %}</title>
+
+    {% load staticfiles %}
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script type="text/javascript" src="{% static 'tution/anim.js' %}"></script>
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'tution/test.css' %}" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script>
+
+
+        $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+    </script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" background="{% static 'tution/images/school.png' %}">
+{% block body %}
+ <nav class="navbar navbar navbar-fixed-top" role="navigation">
+        <div  class="container-fluid">
+            <!-- HEADER-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="{% url 'tution:index' %}"> <img id="brand-image"  src="{% static 'tution/images/vids.png' %} " class="img-responsive logo" style="max-width:150px; margin-top:-30px;"> </a>
+            </div>
+
+
+
+            <!-- NAVigation BAR ITEMS -->
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#about">
+                            <span class="glyphicon glyphicon-link" aria-hidden="true" ></span>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Services
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#feature">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Feature
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>&nbsp;Contact Us
+                        </a>
+                    </li>
+                </ul>
+                 <form class="navbar-form navbar-right">
+                      <a href="{% url 'login' %}" class="btn btn-primary">Log in</a>
+                        <a href="{% url 'tution:signup' %}" class="btn btn-primary ml-2">Sign up</a>
+              </form>
+
+            </div>
+
+
+
+        </div>
+
+
+  </nav>
+{% block content %}
+{% endblock %}
+
+{% endblock body %}
+</body>
+
+</html>

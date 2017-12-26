@@ -1,0 +1,87 @@
+<style>
+body {
+  background-image: url('{{ STATIC_URL }}images/school.jpg')!important;
+}
+
+.logo {
+
+  font-family: 'Peralta', cursive;
+}
+
+.logo a {
+  color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
+h3 {
+  text-size:30px;
+}
+.panel-body{
+  padding: 15px!important;
+
+}
+h1 {
+ text-size: 50!important%;
+}
+
+div.fi {
+    width:500px;
+
+
+}
+p {
+ text-size: 30px;
+
+}
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336;
+}
+
+#contact {
+    top: 200px;
+    background-color: #555
+}
+h4{
+
+text-size: 20px;
+}
+
+.panel-transparent .panel-heading{
+    background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(46, 51, 56, 0.2)!important;
+}
+</style>
+

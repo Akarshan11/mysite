@@ -1,0 +1,35 @@
+{% extends 'tution/upper.html' %}
+
+{% load staticfiles %}
+{% block body %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-8">
+            <br>
+            <div class="panel panel-primary">
+                <div class="panel-body" style="margin: 20px 20px 20px 20px;">
+                   <div class="row justify-content-center">
+                    <img src="{% static 'tution/images/vid.png' %}">
+                   </div>
+                   <h3>Enter your information</h3>
+                    {% if error_message %}
+                       <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+
+                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% include 'tution/form.html' %}
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-success btn-block">SUBMIT</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
